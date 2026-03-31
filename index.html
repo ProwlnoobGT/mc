@@ -256,7 +256,7 @@
                 <div class="text-[11px] text-pink-100/75">
                   <div class="font-semibold">Server IP:</div>
                   <div class="font-mono text-[11px] flex items-center gap-1">
-                    play.pinkiecraft.com
+                    play.pinkiecraft.xyz
                     <button id="copy-ip" class="px-2 py-0.5 text-[10px] rounded-full bg-white/10 border border-white/15 hover:bg-white/15">Copy</button>
                   </div>
                 </div>
@@ -406,7 +406,7 @@
                 <span class="faq-icon text-pink-100 transition-transform duration-200 text-xs sm:text-sm">▶</span>
               </button>
               <div class="faq-content px-4 pb-3 text-[11px] text-pink-100/85" data-faq-content>
-                Use your official Minecraft Java account and connect to <span class="font-mono text-pink-50">play.pinkiecraft.com</span>. For the smoothest experience, we recommend using the pinkie craft Land Client launcher.
+                Use your official Minecraft Java account and connect to <span class="font-mono text-pink-50">play.pinkiecraft.xyz</span>. For the smoothest experience, we recommend using the pinkie craft Land Client launcher.
               </div>
             </div>
             <div class="faq-item rounded-xl2 border border-white/10 bg-white/5 backdrop-blur-xl wiggle-hover">
@@ -600,7 +600,7 @@
 
     document.getElementById("copy-ip")?.addEventListener("click", async () => {
       try {
-        await navigator.clipboard.writeText("play.pinkiecraft.com");
+        await navigator.clipboard.writeText("play.pinkiecraft.xyz");
         showNotification("Server IP copied to clipboard");
       } catch {
         showNotification("Could not copy IP, please copy it manually");

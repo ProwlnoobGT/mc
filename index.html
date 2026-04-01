@@ -701,6 +701,36 @@
   </script>
 
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"2dc5d838ac724d0e877311b03f2f71fc","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>
+  // This function runs once the page elements are loaded
+  document.addEventListener("DOMContentLoaded", () => {
+    const discordUrl = "https://discord.gg/pinkiecraftland";
+    const linkText = "Discord";
+
+    // 1. Adds to the Desktop Header (next to FAQ)
+    const desktopNav = document.querySelector('header nav.md\\:flex');
+    if (desktopNav) {
+      const dLink = document.createElement('a');
+      dLink.href = discordUrl;
+      dLink.className = "text-pink-50/80 hover:text-white transition-colors";
+      dLink.textContent = linkText;
+      dLink.target = "_blank";
+      desktopNav.appendChild(dLink);
+    }
+
+    // 2. Adds to the Mobile Menu (under FAQ)
+    const mobileNav = document.querySelector('#mobile-menu nav');
+    if (mobileNav) {
+      const mLink = document.createElement('a');
+      mLink.href = discordUrl;
+      mLink.className = "py-1";
+      mLink.textContent = linkText;
+      mLink.target = "_blank";
+      mobileNav.appendChild(mLink);
+    }
+  });
+</script>
+
 </body>
 </html>
 
